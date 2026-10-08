@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#bdc9c8","on-surface-variant":"#3e4949","tertiary-fixed":"#ffdbcc","surface-variant":"#d9e3f6","secondary":"#106966","on-secondary-fixed":"#00201e","primary-fixed":"#90f3f3","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#00504d","on-tertiary-container":"#fffbff","secondary-container":"#a1ede8","on-secondary-container":"#186e6a","secondary-fixed-dim":"#88d4cf","primary-fixed-dim":"#73d6d7","inverse-primary":"#73d6d7","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","outline":"#6e7979","on-background":"#121c2a","on-primary-container":"#f3fffe","on-error":"#ffffff","tertiary-container":"#bb5822","secondary-fixed":"#a4f0eb","surface-container-highest":"#d9e3f6","tertiary":"#9b4008","error":"#ba1a1a","on-primary":"#ffffff","surface-container-low":"#eff4ff","on-primary-fixed":"#002020","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#7b2f00","surface-dim":"#d0dbed","primary-container":"#008283","primary":"#006768","surface-container-high":"#dee9fc","on-tertiary-fixed":"#351000","surface":"#f8f9ff","on-surface":"#121c2a","inverse-surface":"#27313f","surface-container":"#e6eeff","on-secondary":"#ffffff","surface-bright":"#f8f9ff","on-error-container":"#93000a","background":"#f8f9ff","tertiary-fixed-dim":"#ffb694","surface-tint":"#00696a","on-primary-fixed-variant":"#004f50"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","gutter":"1.5rem","space-sm":"0.5rem","space-xl":"2rem","margin":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between p-space-lg"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Logo WargaHub RT" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vyi37SFblnQWcSnsJziBNU7ta_niJPdqbWdkgCzVoyoJJwpx8fRxG55ioTIBXA9ENUGOlqH7WQFhpbnAAqcqXAh6bD0_H66HRtwDMrka2ov1wRPHSwutsm462QrDu2wNKq-q0l5sr_5jLFiAQLdvi8SG5OW8kJSFrRVQqRav-E53kyER6O3LiT1Mf3cm5_rOpBO9nuYaK_30HPMWCzJvD_sI98YqonZ_qbXGszKj6AKA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">WargaHub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sistem RT Digital</span></div></div><div class="flex items-center gap-space-sm bg-surface-container-highest px-space-md py-space-xs rounded-xl shadow-[0_1px_3px_0_rgba(31,41,55,0.05)]"><span class="material-symbols-outlined text-primary text-title-md">domain</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">RT 04 / RW 07</span><span class="font-body-sm text-body-sm text-on-surface-variant">Kel. Sukamaju</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_4px_6px_-1px_rgba(53,159,160,0.08)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dasbor-dan-statistik" href="#"><span class="material-symbols-outlined text-title-md">dashboard</span><span>Dasbor & Statistik</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="data-warga-dan-kk" href="#"><span class="material-symbols-outlined text-title-md">badge</span><span>Data Warga & KK</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_4px_6px_-1px_rgba(53,159,160,0.08)]" data-path="layanan-surat" href="#"><span class="material-symbols-outlined text-title-md">mark_email_read</span><span>Layanan Surat</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="keuangan-dan-ronda" href="#"><span class="material-symbols-outlined text-title-md">account_balance_wallet</span><span>Keuangan & Ronda</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between shadow-[0_1px_3px_0_rgba(31,41,55,0.05)]"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary-container text-title-md animate-pulse">campaign</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">Pos Ronda Cepat</span><span class="font-body-sm text-body-sm text-on-surface-variant">Siaga 24 Jam</span></div></div><span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-space-sm py-space-xs rounded-full font-bold">Aktif</span></div><div class="flex items-center justify-between px-space-xs text-on-surface-variant font-label-sm text-label-sm"><span>v2.4.0 RT Presisi</span><span class="flex items-center gap-space-xs text-secondary font-medium"><span class="w-2 h-2 rounded-full bg-secondary"></span>Terkoneksi</span></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-title-md">search</span><input class="w-full h-11 pl-11 pr-space-md bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all shadow-[0_1px_2px_rgba(0,0,0,0.03)]" placeholder="Cari warga, NIK, nomor surat..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-secondary-container px-space-md py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">Mode Pengurus RT - Aktif</span></div><button aria-label="Tombol Notifikasi dan Darurat" class="relative p-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-[9px] font-bold ring-2 ring-surface">3</span></button><div class="h-8 w-[1px] bg-outline-variant/40 mx-space-xs"></div><div class="flex items-center gap-space-sm cursor-pointer py-space-xs px-space-sm rounded-xl hover:bg-surface-container transition-all"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtFpSk5JWScLKnh6nqSMteLpCUpELf5Q_v4VY0LMEHub02UxJd8lNrIS641RAgkO7m6yyoN9A7Efbeec99XCouSzEciqiI3V5O7jOFmEm8jVeUMUZ-aSwoXtP5-c0LoaW5IAvJ5todG2HNYyeXUpT1-QaSs1Tx9Z1ZfcVBOhdCT-HeqjdwpaG8NOCHTbpauy0rGbHPHmisl7t8PH1VqmxA9Ye6OXvEyV6NlNEPSbWe"/><div class="flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Bpk. Budi Santoso</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RT 04</span></div><span class="material-symbols-outlined text-outline text-title-md ml-space-xs">expand_more</span></div></div></header><main class="w-full pt-16 bg-background flex-1 p-gutter"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Banner / Summary Header -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-title-md text-primary">verified</span>
+<span>E-Government RT Presisi • Modul Persuratan Terpadu</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Pelayanan Administrasi & Pengajuan Surat Pengantar RT</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Verifikasi berkas warga secara instan, otentikasi tanda tangan digital, dan penerbitan surat pengantar otomatis berstandar Kelurahan.</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-title-md">history_edu</span>
+<span>Template Surat</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-sm rounded-xl font-label-lg text-label-lg hover:bg-primary-container shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-title-md">add_circle</span>
+<span>+ Buat Surat Manual (Walk-in Warga)</span>
+</button>
+</div>
+</section>
+<!-- Filter & Workflow Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-xl">
+<button class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface shadow-sm" type="button">
+<span>Menunggu Persetujuan</span>
+<span class="bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">6</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">
+<span>Disetujui</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">142</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">
+<span>Ditolak</span>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">3</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">
+<span>Arsip Selesai</span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold">210</span>
+</button>
+</div>
+<!-- Quick Stats Pill -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest px-space-md py-space-xs rounded-xl shadow-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Rata-rata Waktu Verifikasi: <strong class="text-on-surface">14 Menit</strong></span>
+</div>
+<div class="w-px h-4 bg-surface-variant"></div>
+<div class="flex items-center gap-space-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>SLA Pelayanan 100%</span>
+</div>
+</div>
+</div>
+<!-- Split Workflow Layout: Queue List (Left) + Document Preview (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Antrean Pengajuan Surat -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-title-md">inbox</span>
+<h2 class="font-title-md text-title-md text-on-surface">Antrean Berkas Masuk</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded-md">Urut: Terlama</span>
+</div>
+<!-- Queue Cards Container -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 (Active/Selected) -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-md transition-all cursor-pointer bg-gradient-to-r from-primary/5 via-surface-container-lowest to-surface-container-lowest">
+<div class="absolute left-0 top-3 bottom-3 w-1.5 bg-primary rounded-r-full"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-on-secondary-container bg-secondary-container px-space-sm py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              SKCK
+            </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed font-semibold px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+              Menunggu Approval
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Surat Pengantar SKCK</h3>
+<div class="mt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Ahmad Fadhil</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Blok B2 / 07</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+              Diajukan: 2 jam lalu
+            </span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              KTP & Iuran Valid
+            </span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface-variant bg-surface-container-highest px-space-sm py-0.5 rounded-full">
+              Domisili Usaha
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+              5 jam lalu
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Surat Keterangan Domisili Usaha</h3>
+<div class="mt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Ibu Sri Mulyani</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Blok A4 / 15</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-on-surface-variant">Katering Berkah Rasa</span>
+<span class="text-tertiary-container font-semibold">Tinjau Foto Lokasi</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface-variant bg-surface-container-highest px-space-sm py-0.5 rounded-full">
+              Kependudukan
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+              Kemarin, 16:45
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Surat Pengantar Pembuatan KTP Baru</h3>
+<div class="mt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Nadia Putri (Usia 17 Th)</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Blok C1 / 03</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-on-surface-variant">Pemohon Pemula</span>
+<span class="text-secondary font-semibold">KK Terverifikasi</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface-variant bg-surface-container-highest px-space-sm py-0.5 rounded-full">
+              Status Perdata
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+              Kemarin, 11:20
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Surat Keterangan Belum Menikah</h3>
+<div class="mt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Dimas Anggoro</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Blok D2 / 10</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-on-surface-variant">Keperluan: KPR Bank Mandiri</span>
+<span class="text-secondary font-semibold">Lengkap</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-semibold text-on-surface-variant bg-surface-container-highest px-space-sm py-0.5 rounded-full">
+              Mutasi Warga
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+              2 hari lalu
+            </span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">Surat Pengantar Pindah Domisili (Keluar)</h3>
+<div class="mt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Bpk. Agus Setiawan</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Blok B1 / 02</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="text-on-surface-variant">Tujuan: Kota Bekasi</span>
+<span class="text-tertiary-container font-semibold">Bebas Tunggakan RT</span>
+</div>
+</div>
+</div>
+<!-- Quick Tips Card -->
+<div class="bg-secondary-container/30 rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-title-lg">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Standard Pelayanan RT 04</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Surat pengantar yang diterbitkan dilengkapi QR Code SHA-256 yang bisa langsung divalidasi oleh petugas Kelurahan Sukamaju secara daring tanpa stempel basah.</p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Panel Preview & Approval Surat Resmi -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Top Action Bar for Active Document -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="bg-primary/10 text-primary p-2 rounded-lg material-symbols-outlined">description</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dokumen Sedang Dipratinjau</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Surat Pengantar SKCK - No: 042/SP-RT04/III/2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-all" title="Perbesar Layar" type="button">
+<span class="material-symbols-outlined text-title-md">zoom_in</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Cetak PDF</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-space-xs rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:opacity-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Kirim WhatsApp</span>
+</button>
+</div>
+</div>
+<!-- Official Letter Canvas (Kop Surat RT) -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-md relative overflow-hidden flex flex-col gap-space-lg">
+<!-- Watermark Background Decal -->
+<div class="absolute -right-16 -bottom-16 w-80 h-80 opacity-5 pointer-events-none text-primary">
+<svg fill="currentColor" viewbox="0 0 200 200">
+<path d="M100 0 L125 75 L200 100 L125 125 L100 200 L75 125 L0 100 L75 75 Z"></path>
+</svg>
+</div>
+<!-- Official Header / Kop Surat -->
+<div class="flex items-center justify-between pb-space-md bg-gradient-to-b from-transparent to-surface-variant/20 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold shadow-inner">
+<span class="material-symbols-outlined text-headline-md">shield</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider font-extrabold">RUKUN TETANGGA 04 / RUKUN WARGA 07</h4>
+<p class="font-label-lg text-label-lg text-primary font-semibold">KELURAHAN SUKAMAJU, KECAMATAN CILODONG, KOTA DEPOK</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sekretariat: Balai Pertemuan Warga Jl. Kemang Dahlia Raya No. 4, Sukamaju • Telp/WA: 0812-9900-0407</p>
+</div>
+</div>
+</div>
+<div class="h-1 bg-gradient-to-r from-primary via-secondary to-primary-fixed rounded-full w-full"></div>
+<!-- Letter Title & Number -->
+<div class="text-center flex flex-col gap-1 my-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-extrabold uppercase tracking-wide underline underline-offset-4 decoration-primary">SURAT PENGANTAR CATATAN KEPOLISIAN (SKCK)</h2>
+<span class="font-label-md text-label-md text-on-surface-variant font-mono">Nomor: 042/SP-RT04/III/2025</span>
+</div>
+<!-- Preamble -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed text-justify">
+          Yang bertanda tangan di bawah ini, Pengurus Rukun Tetangga (RT) 04 / RW 07 Kelurahan Sukamaju, Kecamatan Cilodong, Kota Depok, dengan ini menerangkan bahwa:
+        </p>
+<!-- Citizen Data Grid (Auto-populated from system) -->
+<div class="bg-surface-container-low p-space-lg rounded-xl grid grid-cols-1 md:grid-cols-3 gap-y-space-sm gap-x-space-md text-body-md font-body-md">
+<div class="text-on-surface-variant font-medium">Nama Lengkap</div>
+<div class="md:col-span-2 font-bold text-on-surface">: Ahmad Fadhil Pratama</div>
+<div class="text-on-surface-variant font-medium">NIK (KTP)</div>
+<div class="md:col-span-2 font-mono text-on-surface font-semibold">: 3276021804980004</div>
+<div class="text-on-surface-variant font-medium">Nomor Kartu Keluarga (KK)</div>
+<div class="md:col-span-2 font-mono text-on-surface">: 3276020509120011</div>
+<div class="text-on-surface-variant font-medium">Tempat, Tanggal Lahir</div>
+<div class="md:col-span-2 text-on-surface">: Depok, 18 April 1998 (26 Tahun)</div>
+<div class="text-on-surface-variant font-medium">Jenis Kelamin / Agama</div>
+<div class="md:col-span-2 text-on-surface">: Laki-laki / Islam</div>
+<div class="text-on-surface-variant font-medium">Pekerjaan / Status</div>
+<div class="md:col-span-2 text-on-surface">: Karyawan Swasta / Belum Menikah</div>
+<div class="text-on-surface-variant font-medium">Alamat Domisili Tetap</div>
+<div class="md:col-span-2 text-on-surface">: Jl. Kemang Dahlia Blok B2 No. 07, RT 04 / RW 07, Sukamaju</div>
+</div>
+<!-- Purpose & Context -->
+<div class="flex flex-col gap-space-xs text-body-md font-body-md text-on-surface">
+<p class="leading-relaxed text-justify">
+            Nama tersebut di atas adalah benar-benar warga yang berdomisili menetap di lingkungan RT 04 / RW 07 Kelurahan Sukamaju. Berdasarkan catatan dan pengamatan pengurus, yang bersangkutan berkelakuan baik, tidak sedang menjalani proses pidana, dan aktif bergotong royong di lingkungan.
+          </p>
+<div class="bg-tertiary-fixed/30 p-space-md rounded-xl flex items-start gap-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-tertiary-container mt-0.5">assignment_turned_in</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Maksud / Keperluan Permohonan:</span>
+<p class="font-body-md text-body-md text-on-surface italic">"Persyaratan melamar pekerjaan sebagai Network Operations Engineer di PT Telkom Indonesia (Persero) Tbk."</p>
+</div>
+</div>
+<p class="leading-relaxed mt-space-xs text-justify">
+            Demikian surat pengantar ini dibuat dengan sebenar-benarnya untuk dipergunakan sebagai kelengkapan berkas pengurusan Surat Keterangan Catatan Kepolisian (SKCK) di Polsek Cilodong / Polres Metro Depok.
+          </p>
+</div>
+<!-- Attached Documents Verification Box -->
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-title-md">attach_file</span>
+            Lampiran Berkas & Validasi Iuran Lingkungan
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-label-md text-label-md text-on-surface">Foto KTP Elektronik</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container text-label-sm font-label-sm px-2 py-0.5 rounded-full font-semibold">Terlampir (Jelas)</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-label-md text-label-md text-on-surface">Iuran RT Mar 2025</span>
+</div>
+<span class="bg-secondary text-on-secondary text-label-sm font-label-sm px-2 py-0.5 rounded-full font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">done_all</span>
+                Lunas Terverifikasi
+              </span>
+</div>
+</div>
+</div>
+<!-- Sign-off & Verification QR Block -->
+<div class="flex flex-col md:flex-row items-end justify-between pt-space-md gap-space-lg">
+<!-- QR Code & Digital Security Seal -->
+<div class="flex items-center gap-space-md bg-surface-container-low p-space-md rounded-xl max-w-sm">
+<div class="w-20 h-20 bg-surface-container-lowest p-1.5 rounded-lg shadow-sm shrink-0 flex items-center justify-center">
+<!-- Inline QR Code Simulation Vector -->
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0 0h30v30H0zM10 10h10v10H10zM70 0h30v30H70zM80 10h10v10H80zM0 70h30v30H0zM10 80h10v10H10zM40 0h10v20H40zM55 0h10v10H55zM40 30h20v10H40zM70 40h10v20H70zM90 40h10v30H90zM40 50h10v20H40zM60 50h20v10H60zM40 80h10v20H40zM60 70h10v20H60zM80 80h20v20H80zM20 40h10v20H20zM35 60h10v10H35z"></path>
+</svg>
+</div>
+<div class="flex flex-col text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-bold text-on-surface flex items-center gap-1 text-label-md">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock_reset</span>
+                Otentikasi Digital RT
+              </span>
+<span>SHA-256: e8c4..91a0</span>
+<span>Pindai QR untuk memeriksa keabsahan surat di portal WargaHub.</span>
+</div>
+</div>
+<!-- Signature Specimen -->
+<div class="flex flex-col items-center text-center min-w-[200px]">
+<span class="font-body-md text-body-md text-on-surface">Depok, 20 Maret 2025</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Ketua Rukun Tetangga 04</span>
+<!-- Specimen Graphic Signature -->
+<div class="h-16 w-36 relative flex items-center justify-center my-1">
+<div class="absolute inset-0 flex items-center justify-center text-primary/30">
+<span class="material-symbols-outlined text-[64px] rotate-[-12deg]">gesture</span>
+</div>
+<div class="absolute bottom-1 bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+                TTE Terverifikasi
+              </div>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface underline">BUDI SANTOSO, S.T.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reg ID RT: 2023.04.07.001</span>
+</div>
+</div>
+</div>
+<!-- Action Panel & Approval Buttons -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-title-lg">shield_person</span>
+<span>Surat akan langsung dikirimkan ke aplikasi warga & tercatat di buku ekspedisi digital RT.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<!-- Reject Button -->
+<button class="flex-1 md:flex-initial flex items-center justify-center gap-space-xs bg-surface-container-lowest text-tertiary px-space-md py-space-sm rounded-xl font-label-lg text-label-lg hover:bg-error-container/40 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-title-md">cancel</span>
+<span>Tolak dengan Catatan</span>
+</button>
+<!-- Primary Approve Button -->
+<button class="flex-1 md:flex-initial flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg hover:bg-primary-container shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-title-md">check_circle</span>
+<span>Setujui & Terbitkan Surat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Administrative History & Citizen Presence Banner -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Info Card 1: Pelayanan Kilat -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-headline-sm">mark_email_read</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">3 Menit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rata-rata persetujuan pengurus RT pada jam operasional</span>
+</div>
+</div>
+<!-- Info Card 2: Validasi Iuran Wajib -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-headline-sm">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">98.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemohon berstatus tertib administrasi iuran lingkungan</span>
+</div>
+</div>
+<!-- Info Card 3: Integrasi Kelurahan -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-headline-sm">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Kel. Sukamaju</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Terhubung dengan Sistem Pelayanan Terpadu Kelurahan</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for document preview card selection
+  document.querySelectorAll('.lg\\:col-span-5 .cursor-pointer').forEach((card) => {
+    card.addEventListener('click', function () {
+      // Toggle active visual feedback
+      document.querySelectorAll('.lg\\:col-span-5 .cursor-pointer').forEach(c => {
+        c.classList.remove('bg-gradient-to-r', 'from-primary/5', 'via-surface-container-lowest', 'to-surface-container-lowest');
+        const bar = c.querySelector('.absolute.left-0');
+        if (bar) bar.remove();
+      });
+      this.classList.add('bg-gradient-to-r', 'from-primary/5', 'via-surface-container-lowest', 'to-surface-container-lowest');
+      const indicator = document.createElement('div');
+      indicator.className = 'absolute left-0 top-3 bottom-3 w-1.5 bg-primary rounded-r-full';
+      this.prepend(indicator);
+    });
+  });
+</script></main></div></body></html>
