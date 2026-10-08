@@ -32,18 +32,28 @@ function Field({ label, children, className = '' }) {
 
 export default function FormWarga({ onSimpan, onTutup }) {
   const [form, setForm] = useState(kosong)
+  const [menyimpan, setMenyimpan] = useState(false)
+  const [galat, setGalat] = useState('')
   const ubah = (field) => (e) => setForm({ ...form, [field]: e.target.value })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const { nomorRumah, ...data } = form
-    onSimpan({
-      ...data,
-      nama: data.nama.trim(),
-      noKK: data.noKK || data.nik,
-      alamat: `Blok ${data.blok}${nomorRumah.trim() ? ` No. ${nomorRumah.trim()}` : ''}`,
-      pekerjaan: data.pekerjaan.trim() || opsiPekerjaan.find((o) => o.value === data.kategoriPekerjaan).label
-    })
+    setMenyimpan(true)
+    setGalat('')
+    try {
+      // Jika berhasil, halaman induk menutup form ini
+      await onSimpan({
+        ...data,
+        nama: data.nama.trim(),
+        noKK: data.noKK || data.nik,
+        alamat: `Blok ${data.blok}${nomorRumah.trim() ? ` No. ${nomorRumah.trim()}` : ''}`,
+        pekerjaan: data.pekerjaan.trim() || opsiPekerjaan.find((o) => o.value === data.kategoriPekerjaan).label
+      })
+    } catch (err) {
+      setGalat(err.message)
+      setMenyimpan(false)
+    }
   }
 
   return (
@@ -110,7 +120,7 @@ export default function FormWarga({ onSimpan, onTutup }) {
             <input className={inputClass} onChange={ubah('tempatLahir')} required value={form.tempatLahir} />
           </Field>
           <Field label="Tanggal Lahir">
-            <input className={inputClass} onChange={ubah('tglLahir')} required type="date" value={form.tglLahir} />
+            <input className={inputClass} max={new Date().toLocaleDateString('sv-SE')} onChange={ubah('tglLahir')} required type="date" value={form.tglLahir} />
           </Field>
           <Field label="Golongan Darah">
             <select className={inputClass} onChange={ubah('golDarah')} value={form.golDarah}>
@@ -131,12 +141,28 @@ export default function FormWarga({ onSimpan, onTutup }) {
           </Field>
         </div>
 
+        <p className="text-body-sm text-on-surface-variant">
+          Jika No. KK sudah terdaftar, warga ditambahkan sebagai anggota KK tersebut dan alamatnya mengikuti data KK.
+        </p>
+
+        {galat && (
+          <div className="flex items-start gap-space-xs rounded-xl bg-error-container p-space-sm text-body-sm text-on-error-container" role="alert">
+            <span className="material-symbols-outlined text-title-md">error</span>
+            <span>{galat}</span>
+          </div>
+        )}
+
         <div className="flex justify-end gap-space-sm pt-space-xs">
           <button className="rounded-xl bg-surface-container-high px-space-md py-2.5 text-label-lg text-on-surface hover:bg-surface-container-highest" onClick={onTutup} type="button">
             Batal
           </button>
-          <button className="rounded-xl bg-primary px-space-md py-2.5 text-label-lg text-on-primary shadow-md shadow-primary/20 hover:bg-primary-container" type="submit">
-            Simpan Warga
+          <button
+            className="flex items-center gap-space-xs rounded-xl bg-primary px-space-md py-2.5 text-label-lg text-on-primary shadow-md shadow-primary/20 hover:bg-primary-container disabled:cursor-wait disabled:opacity-60"
+            disabled={menyimpan}
+            type="submit"
+          >
+            {menyimpan && <span className="material-symbols-outlined animate-spin text-title-md">progress_activity</span>}
+            {menyimpan ? 'Menyimpan...' : 'Simpan Warga'}
           </button>
         </div>
       </form>

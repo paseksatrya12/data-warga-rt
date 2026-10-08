@@ -15,7 +15,7 @@ function nomorHalaman(aktif, total) {
   return urut.flatMap((n, i) => (i > 0 && n - urut[i - 1] > 1 ? ['…', n] : [n]))
 }
 
-export default function TabelWarga({ baris, total, halaman, perHalaman, onHalaman, onPerHalaman, terpilihId, onPilih, onChat, onMenu }) {
+export default function TabelWarga({ baris, total, halaman, perHalaman, onHalaman, onPerHalaman, terpilihId, pesanKosong, onPilih, onChat, onMenu }) {
   const totalHalaman = Math.max(1, Math.ceil(total / perHalaman))
   const awal = total === 0 ? 0 : (halaman - 1) * perHalaman + 1
   const akhir = Math.min(halaman * perHalaman, total)
@@ -38,7 +38,7 @@ export default function TabelWarga({ baris, total, halaman, perHalaman, onHalama
             {baris.length === 0 && (
               <tr>
                 <td className="px-space-md py-space-xl text-center text-body-md text-on-surface-variant" colSpan={6}>
-                  Tidak ada data warga yang cocok dengan filter.
+                  {pesanKosong}
                 </td>
               </tr>
             )}
